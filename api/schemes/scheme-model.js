@@ -98,7 +98,7 @@ async function findById(scheme_id) { // EXERCISE B
       .orderBy('st.step_number')
     
     const result = {
-      scheme_id: scheme_id,
+      scheme_id: parseInt(scheme_id),
       scheme_name: rows[0].scheme_name,
       steps: []
     }
